@@ -6,9 +6,6 @@ const rtpengine = new Rtpengine();
 const parseUri = require('drachtio-sip').parser.parseUri;
 const locRtp = config.get('rtpengine');
 
-console.log(`rtpengine: ${JSON.stringify(locRtp)}`);
-// helper functions
-
 // clean up and free rtpengine resources when either side hangs up
 function endCall(dlg1, dlg2, details) {
   let deleted = false;
@@ -53,8 +50,7 @@ srf.invite((req, res) => {
   const from = req.getParsedHeader('From');
   const details = {
     'call-id': req.get('Call-Id'),
-    'from-tag': from.params.tag,
-    'record': 'yes'
+    'from-tag': from.params.tag
   };
 
   console.log(`got invite, sending to ${dest}`);
