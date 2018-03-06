@@ -1,0 +1,12 @@
+{
+  "drachtio": {
+    "host": "127.0.0.1",
+    "port": 9022,
+    "secret": "cymru"
+  },
+  "rtpengine": {
+    "host": "174.138.52.193",
+    "port": 22222
+  },
+  "destination": "67.209.161.70"
+}

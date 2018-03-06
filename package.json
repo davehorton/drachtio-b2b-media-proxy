@@ -1,0 +1,33 @@
+{
+  "name": "drachtio-b2b-media-proxy",
+  "version": "1.0.0",
+  "description": "simple B2BUA that uses rtpengine to proxy media",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davehorton/drachtio-b2b-media-proxy.git"
+  },
+  "keywords": [
+    "SIP",
+    "drachtio",
+    "rtpengine",
+    "rtp",
+    "media",
+    "proxy"
+  ],
+  "author": "Dave Horton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davehorton/drachtio-b2b-media-proxy/issues"
+  },
+  "homepage": "https://github.com/davehorton/drachtio-b2b-media-proxy#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "drachtio-sip": "^0.3.5",
+    "drachtio-srf": "^4.2.10",
+    "rtpengine-client": "0.0.6"
+  }
+}
